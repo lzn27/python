@@ -1,0 +1,10 @@
+import random
+import string
+
+def generateCode(count):
+    for num in range(count):
+        key = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        code = ''.join(random.sample(key,10))
+        print(code)
+
+generateCode(200)    
